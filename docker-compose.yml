@@ -7,4 +7,4 @@ services:
     volumes:
       - ./hosts:/etc/hosts
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./www:/www
+      - /var/www:/www
