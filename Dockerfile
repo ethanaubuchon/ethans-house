@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine
 
 RUN apk update && apk add nginx && apk add openrc --no-cache
 
