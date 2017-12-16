@@ -8,17 +8,6 @@ services:
       - ./nginx/hosts:/etc/hosts
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./public:/www/public
-  mongodb:
-    image: mongo:latest
-    environment:
-      - MONGO_DATA_DIR=/data/db
-      - MONGO_LOG_DIR=/data/logs
-    volumes:
-      - ./data/db:/data/db
-      - ./data/logs:/data/logs
-    expose:
-        - "27017"
-    command: mongod --smallfiles # --quiet
   login:
     depends_on:
       - nginx
