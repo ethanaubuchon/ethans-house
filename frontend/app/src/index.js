@@ -1,2 +1,2 @@
 import App from 'app.jsx';
-// import 'app.css';
+import 'app.css';
