@@ -2,9 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  watchOptions: {
-    poll: true
-  },
   entry: __dirname + '/src/index.js',
   output: {
     path: '/opt/bin/',

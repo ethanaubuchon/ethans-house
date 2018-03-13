@@ -24,4 +24,4 @@ services:
     volumes:
       - ./frontend/app:/opt/app
       - ./public:/opt/bin
-    command: webpack --watch
+    command: tail -f /dev/null
