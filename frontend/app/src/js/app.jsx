@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import Page from 'layout/page';
+
 class App extends React.Component {
   render() {
     return(
-      <h1>Hello World</h1>
+      <Page />
     );
   }
 }
